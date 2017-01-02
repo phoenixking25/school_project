@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta charset="utf-8">
+	<title>ABC School</title>
+	<style type="text/css">
+		html{
+			overflow-x: hidden;
+		}
+		body{
+			background-color: #e2e5e0;
+		}
+		#slogan{
+			position: absolute;
+			top:0;
+			width: 100%;
+			left:0;
+			box-shadow: 1px 1px 1px black;
+			height: 4%;
+			background-color: 	#808080;
+			color: #f1f1f1;
+			text-align: center;
+			padding: 2px;
+		}
+		#logo{
+			position: absolute;
+			top:5%;
+			left: 29%;
+		}
+		#name1{
+			text-align: center;
+			position: absolute;
+			top:5%;
+			left: 39%;
+		}
+		#menu{
+			position: absolute;
+			width: 100%;
+			height: 6%;
+			background-color: 	#0059b3;
+			color: #f1f1f1;
+			top: 22%;
+			left: 0;
+			box-shadow: 1px 1px 1px black;
+			font-size: 110%;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+   			padding: 0;
+    		overflow: hidden;
+		}
+		li{
+			float: left;
+		}
+		li a{
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 3px 50px;
+			text-decoration: none;
+		}
+		#alert{
+			text-align: center;
+			position: absolute;
+			top:33%;
+			left: 0%;
+			background-color: #0059b3;
+			width: 100%;
+			height: 6%;
+			text-align: center;
+			color: white;
+			font-size: 150%;
+		}
+		#school{
+			height: auto;
+			width: auto;
+			position: absolute;
+			top: 45%;
+			left: 10%;
+			box-shadow: 2px 2px 2px black;
+			}
+		#footer{
+			height: 30%
+			width:100%;
+			background-color: 	#0059b3;
+			top: 134%;
+			left: 0%;
+			position: absolute;	
+			box-shadow: 1px 1px 1px black;
+			font-size: 110%;
+		}
+		#info{
+			text-align:  center;
+			color:white;
+
+		}
+		#works{
+			top: 162%;
+			left: 0;
+			height: 6%;
+			width: 100%;
+			position: absolute;
+			text-align: center;
+			color: white;
+			background-color: #000066;
+			padding-top: 1%;
+		}
+		#slide{
+			max-width: 300px;
+			position: absolute;
+			top:80%;
+			right: 10%;
+
+
+		}
+		.slideshow{
+			display: none;
+		}
+
+	</style>
+</head>
+<body>
+	<div id = "container">
+		<div id="slogan">
+		HARDWORK BEATS TALENT
+		</div>
+		<div id = "name">
+			<img id="logo" src="ABC_USD_Logo.png" height="100" width="100">
+			<h2 id="name1">ABC INTERNATIONAL SCHOOL<br>SCHOOL WITH A DIFFERENCE </h2>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Admissions</a></li>
+				<li><a href="#">Academics</a></li>
+				<li><a href="#">Facilities</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact Us</a></li>
+				
+			</ul>
+		</div>
+		<div id="alert">
+				Admission Open for 2016-2017
+		</div>
+		<div id="school">
+			<img  src="school.jpg" height="500" width="700">
+		</div>
+		<div id = "slide" >
+			<img class="slideshow" src="1.jpg" style="width: 100%">
+			<img class="slideshow" src="2.jpg" style="width: 100%">
+			<img class="slideshow" src="3.jpg" style="width: 100%">
+			<img class="slideshow" src="4.jpg" style="width: 100%">
+		</div>
+		<div id="footer">
+				<ul>
+				<li><a href="#">School Photo Gallery</a></li>
+				<li><a href="#">Location Map</a></li>
+				<li><a href="#">Holiday list</a></li>
+				<li><a href="#">School Planner</a></li>
+				<li><a href="#">School Song</a></li>
+				<li><a href="#">Contact Us</a></li>
+				</ul>
+				...............................................................................................................................................................................................................................................................................................<br>
+				<p id="info">
+					Address:............................<br>
+					Telephone:............................<br>
+					E.Mail:.............................<br>
+					Web:................................<br>
+				</p>
+		</div>
+		<div id="works">
+		PHOENIX WORKS
+		</div>
+	</div>
+	<script type="text/javascript">
+		var myIndex = 0;
+		change();
+
+		function change() {
+			var i;
+			var x = document.getElementByClassName('slideshow');
+			for( i=0; i < x.length; i++){
+				x[i].style.display = "none";
+			}
+			myIndex++;
+				if(myIndex > x.length)
+				{
+					myIndex = 1
+				}
+				x[myIndex-1].style.display = "block";
+				setTimeout(change,2000;)
+		}
+
+	</script>
+</body>
+</html>
